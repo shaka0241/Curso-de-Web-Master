@@ -1,0 +1,49 @@
+Saludos muchachos!!!
+
+Primera actividad de JavaScript!
+
+
+
+HTML --->  Es una pagina de una Fruteria.
+
+1.-  Titulo de la Pagina y del body (FRUTERIA LOS GOCHOS DEL AMOR)
+Pueden usar un color de fondo cualquiera en el body y un
+h1 para el titulo.
+
+
+JAVASCRIPT ---> Los productos en venta son los siguientes:
+
+kilo_cebolla = 2000
+kilo_tomate = 1000
+kilo_papa = 800
+kilo_recado = 500
+kilo_platano = 3000
+kilo_cambur = 1300
+
+--> Ordenes de compra:
+
+Adrian Simancas = (3kg de cebollas, 2kg de tomates, 6kg de papas, 1/2kg de platano)
+Leonardo Chique = (3kg y medio de platano, 1/2kg de tomate, 1/4kg de cambur)
+David Nalbandian = (3kg de recado, 1kg y medio de papas, 3kg de cebollas, 3/4kg de cambur)
+
+2.-  Un texto donde diga "Cierre de caja", 
+por medio de un boton cambie el texto a "Revise la consola".
+
+3.-  Todas las operaciones se haran mediante variables y los resultados 
+se daran mediante el console.log
+
+Ejemplo: Alberto compro 2kg de papas y 1kg de cambur
+Codigo en JS --->  var kilo_papa = 800;
+		   var kilo_cambur = 1300;
+		   var Alberto = (2*kilo_papa)+kilo_cambur;
+		console.log(Alberto);
+
+
+4.- Realizar variable con la suma de todas las ventas y resultado en consola.
+
+5.- Realizar varible de ganancia del dueño del local = ganancias - 4500 
+mostrando resultado en consola.
+
+	
+
+
