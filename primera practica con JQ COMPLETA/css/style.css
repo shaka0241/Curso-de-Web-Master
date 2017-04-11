@@ -1,0 +1,62 @@
+.circulo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+.cuadrado {
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 10px;
+   }
+
+#circulo_rojo {
+    background-color: red;
+}
+
+#cuadrado_verde {
+    background-color: green;
+}
+
+#cuadrado_azul {
+    background-color: blue;
+}
+
+#poculto{
+    display: none;
+}
+
+/* Css para el formulario */
+#contenedor {
+    width: 550px;
+    margin: 0 auto;
+}
+
+label {
+    position: relative;
+    top: 5px;
+    width: 200px;
+    float: left;
+}
+
+input {
+    height: 40px;
+    padding: 5px 5px 12px 5px;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 320px;
+}
+
+.elemento_formulario {
+    margin-bottom: 10px;
+}
+
+#botonEnviar {
+    width: 200px;
+    margin-left: 220px;
+}
+
