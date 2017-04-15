@@ -22,8 +22,12 @@
 	 		break;
 
 	 	case '4':
+			if($num2 == 0){
+                echo("<p>Introduce un numero diferente a cero<p>
+<h1>Recuerda! un numero entre cero es infinito y mas alla :)</h1>");
+            }else {
 	 		$div = $num1 / $num2;
-	 		echo "La division es un total de:" . $div;
+	 		echo "La division es un total de:" . $div;}
 	 		break;
 	 	
 	 	default:
