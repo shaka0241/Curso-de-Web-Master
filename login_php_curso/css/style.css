@@ -1,0 +1,15 @@
+#form_registro {
+    text-align: center;
+    border-style: solid;
+    border-color: burlywood;
+}
+
+div {
+    margin: 10px;
+}
+
+#form_login {
+    text-align: center;
+    border-style: dashed;
+    border-color: darkmagenta;
+}
