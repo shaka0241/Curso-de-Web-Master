@@ -1,0 +1,59 @@
+$("#botonEnviar").click(function(){
+	// Verificacion de campos vacios
+
+	var campoVacio="";
+	var mensajeError="";
+
+	if ($("#email").val()=="") {
+		campoVacio=campoVacio+"Email<br>"
+	}
+
+	if ($("#telefono").val()=="") {
+		campoVacio=campoVacio+"telefono<br>"
+	}
+
+	if ($("#password").val()=="") {
+		campoVacio=campoVacio+"password<br>"
+	}
+	if ($("#confirmarPass").val()=="") {
+		campoVacio=campoVacio+"Confirmacion del password<br>"
+	}
+
+	if (campoVacio!="") {
+		mensajeError="<p>Los siguientes campos estan vacios:</p>"+campoVacio+mensajeError;
+	}
+
+	function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
+//validando el email
+
+if (isEmail($("#email").val())==false) {
+	mensajeError=mensajeError+"<p> No esta correcto el email</p>"
+}
+
+//validando err telefono
+
+if (! $.isNumeric($("#telefono").val()) || $("#telefono").val().length < 7) {
+    mensajeError=mensajeError+"<p> No esta correcto el telefono</p>";
+}
+
+//valiando que las contraseñas sean iguales
+if ($("#password").val() != $("#confirmarPass").val()) {
+	mensajeError=mensajeError+"<p> Las contraseñas deben coincidir!!!!</p>"
+}
+
+	if (mensajeError !="") {
+		$("#mensajeErrorCampos").html(mensajeError);
+	}
+	else {
+		$("#mensajeExito").html("<p>Te has registrado con exito!</p>");
+	}
+
+
+})
+
+
+
