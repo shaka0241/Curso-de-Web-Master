@@ -10,7 +10,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
-
+	<script src="js/jquery-3.2.0.min.js"></script>
 </head>
 <body>
 	<div class="wrapper login">
@@ -18,7 +18,7 @@
 		<div class="contain content">
 			<header class="header">
 				<div class="contain">
-					<h1><img src="images/logo.jpg" alt="brushell"></h1>
+					<h1><img src="images/logo.jpg" alt="brushell" id="logo"></h1>
 				</div>
 			</header>
 
@@ -26,18 +26,18 @@
 				<fieldset>
 					<div class="col">
 						<label>USUARIO <span class="tooltip">?</span></label>
-						<input type="email" required name="email">
+						<input type="email" name="email">
 
 						<label>CONTRASEÑA <span class="tooltip">?</span></label>
-						<input type="password" required name="password">
+						<input type="password" name="password">
 					</div>
 				</fieldset>
 
-				<input type="submit" value="LOGIN" required>
+				<input type="submit" id="login" name="login" value="LOGIN">
 
 			</form>
 		</div>
 	</div>
-	
+	<script src="js/script.js"></script>
 </body>
 </html>

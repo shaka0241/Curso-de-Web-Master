@@ -10,6 +10,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-3.2.0.min.js"></script>
 
 </head>
 <body>
@@ -40,41 +41,46 @@
 
 					<div class="col">
 						<label>NOMBRE <span class="tooltip">?</span></label>
-						<input type="text">
+						<input type="text" placeholder="Coloca tu nombre">
 
 						<label>USUARIO <span class="tooltip">?</span></label>
-						<input type="text">
+						<input type="text" placeholder="Coloca tu usuario">
 
 						<label>EMAIL <span class="tooltip">?</span></label>
-						<input type="email">
+						<input type="email" placeholder="Coloca un email valido">
 					</div>
 
 					<div class="col">
 						<label>SELECCIONA GENERO <span class="tooltip">?</span></label>
-						<select></select>
+						<select>
+
+							<option value="Mujer">Mujer</option>
+							<option value="Hombre">Hombre</option>
+							<option value="Seleccione" selected>Seleccione uno</option>
+						</select>
 
 						<label>CONTRASEÑA <span class="tooltip">?</span></label>
-						<input type="password">
+						<input type="password" placeholder="Coloca tu contraseña">
 
 				        <label>FECHA DE NACIMIENTO <span class="tooltip">?</span></label>
 						<div class="fecha_nacimiento">
-							<input type="text" class="small">
-							<input type="text" class="small">
-							<input type="text" class="small">
+							<input type="text" class="small" placeholder="01">
+							<input type="text" class="small" placeholder="01">
+							<input type="text" class="small" placeholder="1900">
 						</div>
 					</div>
 					
 					<div class="col all">
 						<input type="checkbox">
-						<span>Lorem ipsum dolor si et amet</span>
+						<span>Recordarme</span>
 					</div>
 				</fieldset>
 
-				<input type="submit" value="Siguiente">
+				<input type="submit" id="paso1" name="paso1" value="Siguiente">
 
 			</form>
 		</div>
 	</div>
-	
+	<script src="js/script.js"></script>
 </body>
 </html>
