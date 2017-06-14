@@ -117,7 +117,7 @@ input, select, textarea {
 
 		.form textarea { height: 150px;}
 
-	.form input[type="submit"] { background: #740900; color: #fff; text-align: center; border:0; padding: 10px 20px; font-size: 18px; }
+	.form input[type="submit"] { background: #3f4d74; color: #fff; text-align: center; border:0; padding: 10px 20px; font-size: 18px; }
 
 	.form input[type="checkbox"] { display: inline-block; margin-right: 5px;}
 
