@@ -117,11 +117,11 @@ input, select, textarea {
 
 		.form textarea { height: 150px;}
 
-	.form input[type="submit"] { background: #3f4d74; color: #fff; text-align: center; border:0; padding: 10px 20px; font-size: 18px; }
+	.form input[type="submit"] { background: #3f4d74; color: #fff; text-align: center; border:0; padding: 10px 20px; font-size: 40px; border-radius: 40px; }
 
-	.form input[type="checkbox"] { display: inline-block; margin-right: 5px;}
+	.form input[type="checkbox"] { display: inline-block; margin-right: 45px;}
 
-		.form .tooltip { display: inline-block; background: #333; color: #fff; border-radius: 50%; width: 15px; line-height: 15px; text-align: center; vertical-align: middle;}
+		.form .tooltip { display: inline-block; background: #3f4d74; color: #fff; border-radius: 50%; width: 15px; line-height: 15px; text-align: center; vertical-align: middle;}
 
 		.form input[type="text"].small { display: inline-block; width: 28.9%; margin-right: 10px;}
 		.form .fecha_nacimiento .small:last-child { margin-right: 0;}
