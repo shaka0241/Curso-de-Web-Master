@@ -87,6 +87,7 @@ input, select, textarea {
 	.login .header { padding-bottom: 30px; width: auto; text-align: center;}
 	.login .contain { max-width: 350px; }
 	.login .col { width: 100%; padding: 0;}
+    .contain .bienvenidos { color: #3f4d74;}
 
 /* -------- 2. GENERIC ITEMS -------- */
 	
@@ -117,7 +118,7 @@ input, select, textarea {
 
 		.form textarea { height: 150px;}
 
-	.form input[type="submit"] { background: #3f4d74; color: #fff; text-align: center; border:0; padding: 10px 20px; font-size: 40px; border-radius: 40px; }
+	.form input[type="submit"] { background: #3f4d74; color: #fff; text-align: center; border:0; padding: 10px 20px; font-size: 15px; border-radius: 30%; }
 
 	.form input[type="checkbox"] { display: inline-block; margin-right: 45px;}
 
@@ -139,4 +140,13 @@ input, select, textarea {
 
 	.error { position: relative; display: block; margin-top: -15px; margin-bottom: 30px; text-align: right; font-size: 12px; font-weight: 300; color: #ff1400;}
 	.error:after { content: "X"; position: absolute; right: 10px; top: -42px; display: block; width: 30px; height: 30px; font: 20px 'Roboto'; color: #ff1400; font-weight: 100;}
+
+	#logo {
+		display: inline-block;
+        float: left;
+		margin:0 0 0 15px;
+        height: auto;
+        width: 100%;
+        max-width: 90%;
+        }
 
