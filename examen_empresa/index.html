@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de empresa</title>
+    
+    <style>
+
+        body {
+            background: #EDEDED;
+        }
+
+        .contenedor {
+            max-width: 90%;
+            margin: 1rem auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            display: flex;
+            background: #FFFFFF;
+            flex: 1 1 100%;
+            order: 1;
+            justify-content: space-between;
+        }
+
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        header nav ul li {
+            border-right: 0.05rem solid gray;
+        }
+
+        header nav ul li a {
+            color: #000000;
+            font-weight: bold ;
+            text-decoration: none;
+            margin: 0 1.5rem;
+
+        }
+        
+        nav ul a:hover {
+            background: black;
+            color:white;
+        }
+
+
+        .reg-in {
+            display: flex;
+            flex-wrap: wrap;
+            background: #2295A1;
+            justify-content: flex-end;
+        }
+
+        header div ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header div ul li.reg {
+            padding-right: 1rem;
+            border-right: 0.05rem solid white;
+        }
+
+        header div ul li.in {
+            margin-left: 1rem;
+            margin-right: 2rem;
+        }
+
+        header div ul li a {
+            color: white;
+            font-weight: bold ;
+            text-decoration: none;
+        }
+
+        .contenido {
+            background: gray;
+            flex: 1 1 100%;
+            order: 3;
+            padding: 1rem;
+        }
+
+        .lateral-1 {
+            background: white;
+            flex: 1 1 100%;
+            order: 4;
+            padding: 1rem;
+        }
+
+        .lateral-2 {
+            background: white;
+            flex: 1 1 100%;
+            order: 5;
+            padding: 1rem;
+        }
+
+        .horizontal-1 {
+            flex: 1 1 100%;
+            order: 2;
+        }
+
+        footer {
+            background: #0f0e0e;
+            color: white;
+            flex: 1 1 100%;
+            text-align: center;
+            order: 5;
+        }
+
+        @media (max-width: 1000px) {
+            .contenedor {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 870px) {
+            header {
+                flex-direction: column;
+            }
+            header a {
+                flex: 0 1 auto;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .lateral-1, .lateral-2,.contenido  {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 590px) {
+            .contenedor {
+                max-width: 100%;
+                margin: 0;
+            }
+            header {
+                padding: 1rem 0 0 0;
+                justify-content: center;
+                align-items: stretch;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+            header nav ul li a {
+                margin: 0;
+                border-radius: 0;
+                border-bottom: 2px solid #61070f;
+                text-align: center;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">EMPRESAS</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">VALORA UN SERVICIO</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="reg-in">
+                <ul>
+                    <li class="reg"><a href="#">Registro </a></li>
+                    <li class="in"><a href="#">Inicia sesion</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <aside class="horizontal-1">
+            <p>Estas en: Inicio > Empresas > Registro de empresas</p>
+        </aside>
+
+        <article class="contenido">
+            <h1>REGISTRO DE EMPRESAS</h1>
+            <hr>
+            <form action="registro.php" method="post">
+                <h3>INFORMACION BASICA</h3>
+
+                <label for="nombre_empresa">Nombre comercial empresa</label>
+                <input type="text" id="nombre_empresa"name="nombre_empresa">
+
+                <label for="tipologia_empresa">Tipologia de la empresa</label>
+                <select id="tipologia_empresa" name="tipologia_empresa">
+                    <option value="Sociedad Anomina (S.A)">Sociedad Anomima (SA)</option>
+                </select>
+                <br>
+
+                <label for="pais">Pais</label>
+                <select id="pais" name="pais">
+                    <option value="Venezuela">Venezuela</option>
+                    <option value="Colombia">Colombia</option>
+                </select>
+
+                <label for="estado">Estado</label>
+                <input type="text" id="estado" name="estado">
+
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad" name="ciudad">
+
+                <h3>INFORMACION REGISTRO</h3>
+                <label for="usuario">Email / usuario</label>
+                <input type="text" id="usuario" name="usuario">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+
+                <label for="password2">Repetir password</label>
+                <input type="password" id="password2" name="password2">
+
+                <br>
+                <label for="descripcion">descripcion de la empresa</label>
+                <textarea id="descripcion" name="descripcion"  cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Guardar cambios">
+            </form>
+        </article>
+
+        <aside class="lateral-1">
+            <h2>Lateral 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque dicta dolorem doloremque laborum nisi possimus, quo repellat similique ut. Laboriosam magni nesciunt odit porro praesentium quas quia tempora vel?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus assumenda culpa cumque cupiditate ducimus ea facere illum ipsa laborum pariatur, quaerat quas quasi repellendus saepe sint suscipit veritatis voluptatum?</p>
+        </aside>
+
+        <aside class="lateral-2">
+            <h2>Lateral 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cumque dicta dolorem doloremque laborum nisi possimus, quo repellat similique ut. Laboriosam magni nesciunt odit porro praesentium quas quia tempora vel?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus assumenda culpa cumque cupiditate ducimus ea facere illum ipsa laborum pariatur, quaerat quas quasi repellendus saepe sint suscipit veritatis voluptatum?</p>
+        </aside>
+
+        <footer>
+            <p>Todos los derechos reservados</p>
+        </footer>
+
+    </div>
+</body>
+</html>
